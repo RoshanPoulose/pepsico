@@ -3,14 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Graphik LC Web";
-  src: url("https://db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.woff")
-      format("woff");
-  font-weight: normal;
-  font-style: normal;
+
+#search {
+  display: none;
+}
+#dishs {
+  display: none;
 }
 
 @font-face {
@@ -36,6 +34,18 @@
 @font-face {
   font-family: tsize;
   src: url(./font/Graphik-Regular-Cy-Web.woff2);
+}
+@font-face {
+  font-family: lsize;
+  src: url(./font/Graphik-Super-Cy-Web.woff2);
+}
+@font-face {
+  font-family: nsize;
+  src: url(./font/GraphikCondensed-Semibold-Web.woff2);
+}
+@font-face {
+  font-family: fsize;
+  src: url(./font/Graphik-Bold-Cy-Web.woff2);
 }
 @font-face {
   font-family: "Circular";
@@ -86,16 +96,13 @@ header {
   padding: 0px 15px 0px 20px;
 }
 .header_logo {
-  /* position: absolute;
-  left: 32.8%; */
   margin-left: 0;
   width: 100%;
   text-align: center;
-  padding-right: 14%;
+
+  padding-right: 13%;
 }
 .header-right {
-  position: absolute;
-  left: 20px;
 }
 .header_logo svg {
   height: 25px;
@@ -869,6 +876,64 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .bars {
+    top: 47px;
+    left: 30px;
+  }
+  .header_logo {
+    margin-left: 50px;
+    padding-right: 0;
+    width: 50%;
+    text-align: right;
+  }
+  .header_logo svg {
+    height: 36px;
+    width: 130px;
+    margin-left: 51px;
+    margin-top: 25px;
+  }
+  header {
+    flex-direction: row;
+    height: 118px;
+    padding: 0 15px 0 20px;
+  }
+  .mobheader {
+    height: 800px;
+  }
+  .header-right {
+    left: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+  }
+  .header-right ul {
+    display: flex;
+  }
+  .search_icon {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: nsize;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 17px;
+    padding: 41px 28px 15px 0;
+  }
+
+  .search_icon svg {
+    margin-right: 7px;
+    margin-top: 2px;
+  }
+  #search {
+    display: flex;
+    float: left;
+    list-style: none;
+    padding: 55px 28px 31px 0;
+  }
+  .hs {
+    height: 800px;
+  }
   .ms {
     height: 140px;
   }
@@ -877,7 +942,6 @@ footer {
   }
   .scrolltext {
     width: 100%;
-    max-height: 624px;
   }
   .scrollimg img {
     height: 760px;
@@ -887,8 +951,8 @@ footer {
   .scrollimg {
     height: 760px;
   }
-  .dish {       
-    top: auto;  
+  .dish {
+    top: auto;
     left: 25%;
     text-align: center;
     width: 65%;
@@ -896,7 +960,7 @@ footer {
   }
   .dishh2 {
     background-color: #fff;
-    color: #000;  
+    color: #000;
     display: unset;
     font-family: bsize;
     font-size: 48px;
@@ -904,13 +968,30 @@ footer {
     letter-spacing: 0;
     line-height: 58px;
   }
+  .imgh1 h2 {
+    width: 63%;
+    font-family: bsize;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 50px;
+    display: inline-block;
+  }
+  .imgh1 {
+    display: flex;
+    justify-content: center;
+    top: 38.8%;
+  }
   .dishh3 {
     width: 100%;
-  }
+  }    
   .buidtxt {
     top: auto;
     bottom: 10px;
-  }
+  }   
   .chilly {
     width: 83.3334%;
     margin: 0 auto;
@@ -919,4 +1000,233 @@ footer {
     width: 160px;
     left: -67px;
   }
+  .yellowbar {
+    margin: 0;
+  }
+  .scrolltext h4 {
+    margin-top: 1px;
+    margin-bottom: 15px;
+  }
+  .scrolltext h2 {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -1px;
+  }
+  .scrolls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }    
+  .scrolltext p {
+    margin-bottom: 24px;  
+  }
+  .chilly {
+    display: flex;
+    justify-content: center;
+  }
+  .dish {
+    left: auto;
+    bottom: 10px;
+  }
+  .dishh3 {
+    color: #fff;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.52px;
+    line-height: 28px;
+  }
+  .redchilly {
+    width: 100%;
+    width: 24%;
+    left: -72px;
+  }
+  .spacex {
+    margin-top: 48px;
+  }
+  .build {
+    width: 83.3334%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #dishs {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .buidtxt {
+    text-align: center;
+    width: 50%;
+    padding: 0;
+    bottom: 30px;
+  }
+  .inclusionimg {
+    width: 83.3334%;
+    margin: 0 auto;
+  }
+  .inclusion {
+    margin-top: 74px;
+  }
+  .inclusionimg h2 {
+    padding: 0 10px;
+    line-height: 42px;
+    bottom: 99px;
+  }
+  .inclusionimg p {
+    margin-top: 11px;
+    margin-bottom: 17px;
+  }
+  .spacer {
+    margin-top: 77px;
+  }
+  #theproduct {
+    display: none;
+  }
+
+  .pimg.a1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .pimg.b1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+
+  .everyday {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cloud {
+    width: 100%;
+  }
+  .cloud img {
+    width: 25%;
+  }
+  .thestart {
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 74px;
+  }
+  .eat h2 {
+    color: #fff;
+
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 58px;
+    margin-bottom: 80px;
+  }
+  .line {
+    display: none;
+  }
+  .star {
+    flex: 0 0 33.3334%;
+    max-width: 33.3334%;
+    padding: 0 15px;
+  }
+
+  #starss {
+    border-left: 3px solid #ffffff80;
+    border-right: 3px solid #ffffff80;
+  }
+  .snack {
+    white-space: nowrap;
+  }
+  .star p {
+    margin-bottom: 18px;
+  }
+  .hungry p {
+    font-family: lsize;
+    margin-top: -4px;
+    font-size: 180px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0 !important;
+    line-height: 200px !important;
+    padding: 0 5px;
+  }
+  .brand p {
+    left: 59px;
+    top: 44px;
+    white-space: nowrap;
+    font-family: bsize;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    line-height: 40px !important;
+  }
+  .chips {
+    padding: 0;
+    margin-top: 80px;
+  }
+  .chipsimg {
+    padding: 0 65px;
+  }
+  .brand {
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    margin-right: 12px;
+  }
+  .bullet {
+    height: 8px;
+    width: 32px;
+  }
+  .wsimle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work {
+    max-width: 66.6667%;
+    margin: auto !important  ;
+    padding: 50px 0px;
+    padding-top: 54px;
+  }
+  .explore {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.52px;
+    line-height: 28px;
+  }
+  .works h5 {
+    margin-bottom: 6px;
+  }
+  .founds {
+    left: 10%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    top: auto;
+    bottom: 30px; 
+    padding: 0px;  
+  }
+  .foundp {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.52px;
+    line-height: 28px;      
+  }                 
+  .foundp2 {
+    font-size: 48px;  
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 58px;
+  }
+  .theview{  
+    display:flex;
+    flex-direction: row-reverse;
+    flex: 1;  
+  }
+  .yellow{
+    flex: 1;    
+    max-width: 66.6667%;       
+  }       
+  .views{        
+    flex: 1;      
+  }             
+  .truck h5{
+    margin-bottom: 4x;
+  }      
 }
