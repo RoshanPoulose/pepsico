@@ -402,8 +402,9 @@ header {
   position: relative;
 }
 .hungry p {
+  margin-left: -16px;
   color: #eeefef !important;
-  font-family: bsize;
+  font-family: lsize;
   font-size: 60px !important;
   font-weight: 300 !important;
   letter-spacing: 0 !important;
@@ -412,7 +413,7 @@ header {
 .bullet {
   position: absolute;
   background-color: #004c97;
-  top: 56px;
+  top: 60px;
   left: 20px;
   height: 6px;
   width: 24px;
@@ -420,8 +421,8 @@ header {
 }
 .brand p {
   position: absolute;
-  left: 52px;
-  top: 42px;
+  left: 62px;
+  top: 47px;
   font-family: bsize;
   font-size: 24px !important;
   font-weight: 700 !important;
@@ -473,9 +474,17 @@ header {
   text-align: center;
   background-color: white;
   position: absolute;
-  top: 193px;
+  top: -5px;
+  transform: translateY(50%);
+  margin: 0 20px;
   padding: 5px 30px;
   margin: 0px 20px;
+}
+.snack svg {
+  transform: translateY(3px);
+}
+.thestart {
+  margin-bottom: 70px;
 }
 .everyday h5 {
   font-family: sesize;
@@ -589,22 +598,27 @@ header {
   margin-bottom: 6px;
 }
 .chipsimg {
+  transform: translateY(4px);
   width: 100%;
   padding: 0px 20px;
 }
 .chips {
-  margin-top: 50px;
+  margin-top: 46px;
   padding: 0px 15px;
 }
 .pep {
-  padding: 40px 0 30px 20px;
+  position: relative;
+  padding: 40px 0 41px 20px;
   background-color: #004c97;
 }
 .topsocial img {
   height: 348px !important;
   width: 348px !important;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+}
+.explore svg {
+  transform: translateY(3px);
 }
 .topsocial {
   position: relative;
@@ -627,6 +641,36 @@ header {
   height: 6em;
   overflow: hidden;
   margin-bottom: 24px;
+}
+.checkout {
+  padding: 30px !important;
+  margin-bottom: 50px;
+}
+.checkout h2 {
+  margin-bottom: 25px;
+  white-space: nowrap;
+  font-family: bsize;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+.checkout img {
+  padding-right: 19px;
+
+  padding-top: 2px;
+  position: absolute;
+
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 75px;
+  background-size: 70%;
+  top: 120px;
+  left: 187px;
+  transform: rotate(90deg);
 }
 .social {
   display: flex;
@@ -713,7 +757,12 @@ header {
   letter-spacing: 0.52px;
   line-height: 28px;
 }
-
+.foundp3 svg {
+  transform: translateY(2px);
+}
+.press svg {
+  transform: translateY(1px);
+}
 .views img {
   display: block;
   width: 100%;
@@ -862,16 +911,57 @@ footer {
   height: 7px;
   width: 7px;
 }
+.scrolltext a svg {
+  transform: translateY(2px);
+}
+#pimgs {
+  display: none;
+}
 
 @media (min-width: 375px) {
+  .founds {
+    top: auto;
+    bottom: 20px;
+  }
   .yellowbar {
     margin-right: 5px;
   }
+  .spacers {
+    margin-top: 33px;
+  }
   .imgh1 h2 {
+    width: 87%;
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 42px;
+  }
+  .imgh1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dish {
+    top: auto;
+    bottom: 4px;
+  }
+  .dishh3 {
+    white-space: nowrap;
+  }
+  .dishh3 svg {
+    transform: translateY(2px);
+  }
+  #dishs {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .buidtxt {
+    top: auto;
+    bottom: 24px;
+  }
+  .inp svg {
+    transform: translateY(4px);
   }
 }
 
@@ -980,25 +1070,41 @@ footer {
     margin-bottom: 50px;
     display: inline-block;
   }
+  .p1 {
+    height: 88.75% !important;
+    padding: 0 15px 15px 15px;
+  }
+  .p1.b1 {
+    padding: 0 0 15px 15px;
+  }
+  .p1.a1 {
+    padding: 0 15px 15px 0px;
+  }
+
   .imgh1 {
     display: flex;
     justify-content: center;
-    top: 38.8%;
+    top: 37.7%;
   }
   .dishh3 {
     width: 100%;
-  }    
+  }
   .buidtxt {
     top: auto;
     bottom: 10px;
-  }   
+  }
+  .thechilly {
+    display: flex;
+  }
   .chilly {
     width: 83.3334%;
     margin: 0 auto;
   }
+
   .redchilly {
+    position: absolute;
     width: 160px;
-    left: -67px;
+    left: -10%;
   }
   .yellowbar {
     margin: 0;
@@ -1015,9 +1121,9 @@ footer {
   .scrolls {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }    
+  }
   .scrolltext p {
-    margin-bottom: 24px;  
+    margin-bottom: 24px;
   }
   .chilly {
     display: flex;
@@ -1035,11 +1141,7 @@ footer {
     letter-spacing: 0.52px;
     line-height: 28px;
   }
-  .redchilly {
-    width: 100%;
-    width: 24%;
-    left: -72px;
-  }
+
   .spacex {
     margin-top: 48px;
   }
@@ -1071,11 +1173,11 @@ footer {
   .inclusionimg h2 {
     padding: 0 10px;
     line-height: 42px;
-    bottom: 99px;
+    bottom: 108px;
   }
   .inclusionimg p {
-    margin-top: 11px;
-    margin-bottom: 17px;
+    margin-top: 11.5px;
+    margin-bottom: 16px;
   }
   .spacer {
     margin-top: 77px;
@@ -1083,7 +1185,12 @@ footer {
   #theproduct {
     display: none;
   }
-
+  #pimgs {
+    display: flex;
+  }
+  .spa {
+    height: 45px;
+  }
   .pimg.a1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
@@ -1095,9 +1202,19 @@ footer {
 
   .everyday {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 47.2%;
+    left: 51.3%;
     transform: translate(-50%, -50%);
+    width: 525px;
+    margin: 0px;
+    padding: 23px 27px 18px 28px;
+    min-height: 355px;
+  }
+  .everyday h5 {
+    margin: 29px 2px 16px 0px;
+  }
+  .everyday h2 {
+    margin-right: 2px;
   }
   .cloud {
     width: 100%;
@@ -1199,34 +1316,94 @@ footer {
     flex: 0 0 50%;
     max-width: 50%;
     top: auto;
-    bottom: 30px; 
-    padding: 0px;  
+    bottom: 30px;
+    padding: 0px;
   }
   .foundp {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.52px;
-    line-height: 28px;      
-  }                 
+    line-height: 28px;
+  }
   .foundp2 {
-    font-size: 48px;  
+    font-size: 48px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 58px;
   }
-  .theview{  
-    display:flex;
+  .theview {
+    display: flex;
     flex-direction: row-reverse;
-    flex: 1;  
+    flex: 1;
   }
-  .yellow{
-    flex: 1;    
-    max-width: 66.6667%;       
-  }       
-  .views{        
-    flex: 1;      
-  }             
-  .truck h5{
+  .yellow {
+    flex: 1;
+    max-width: 66.6667%;
+  }
+  .views {
+    flex: 1;
+  }
+  .truck h5 {
     margin-bottom: 4x;
-  }      
+  }
+  .everyday h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 31px;
+  }
+  .ps span {
+    font-size: 18px;
+    letter-spacing: 0.52px;
+    line-height: 28px;
+  }
+  .everyday p {
+    margin-right: 2px;
+    font-size: 16px;
+    letter-spacing: 0.46px;
+    line-height: 32px;
+  }
+  .ps {
+    margin-right: 2px;
+  }
+  #starss {
+    transform: translateY(-4px);
+  }
+  #startssss {
+    transform: translateY(-4px);
+  }
+  #hungry p {
+    margin-left: 0px;
+  }
+  .bullet {
+    top: 56px;
+  }
+  .pep {
+    display: flex;
+    padding: 120px 0 50px 0;
+  }
+  .social {
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
+  }
+  .topsocial img {
+    height: 218px !important;
+    width: 218px !important;
+  }
+  .bottomsocial p {
+    width: 230px;
+  }
+  .checkout {
+    padding: 50px 50px 0 100px !important;
+  }
+  .checkout h2 {
+    white-space: wrap;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    line-height: 42px !important;    
+  }
+  .checkout img {
+    transform: rotate(0deg);
+  }
 }
