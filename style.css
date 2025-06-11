@@ -878,7 +878,7 @@ footer {
 .co {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 26px;
+  margin-top: 25px;
 }
 .co span {
   display: inline-block;
@@ -897,10 +897,20 @@ footer {
   margin-top: 35px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 3px;
 }
 .linkp {
   margin-right: 20px;
   margin-bottom: 19px !important;
+  color: white;
+  font-size: 11px;
+  line-height: 1rem;
+  font-family: rsize;
+  font-weight: 500;
+}
+.cookies {
+  margin-right: 20px;
+  transform: translateY(-11px);
   color: white;
   font-size: 11px;
   line-height: 1rem;
@@ -1308,7 +1318,7 @@ footer {
     letter-spacing: 0.52px;
     line-height: 28px;
   }
-  .works h5 {           
+  .works h5 {
     margin-bottom: 5px;
     margin-top: 3px;
   }
@@ -1337,17 +1347,17 @@ footer {
     flex-direction: row-reverse;
     flex: 1;
   }
-  .yellows{
+  .yellows {
     display: flex;
     align-items: center;
     flex: 1;
-    background-color: #ffc107;  
+    background-color: #ffc107;
   }
   .yellow {
-     padding: 50px 0px;
+    padding: 50px 0px;
     max-width: 66.6667% !important;
-    margin:  0  auto!important;            
-  }  
+    margin: 0 auto !important;
+  }
   .views {
     flex: 1;
   }
@@ -1387,13 +1397,13 @@ footer {
     top: 56px;
   }
   .pep {
-    display: flex;                   
+    display: flex;
     padding: 120px 0 50px 0;
-  }  
-  .social {   
+  }
+  .social {
     flex: 0 0 58.33333333%;
-    max-width: 58.33333333%;                                   
-    padding: 0 13px;  
+    max-width: 58.33333333%;
+    padding: 0 13px;
   }
   .topsocial img {
     height: 218px !important;
@@ -1410,52 +1420,99 @@ footer {
     font-size: 32px !important;
     font-weight: 700 !important;
     letter-spacing: 0 !important;
-    line-height: 42px !important;    
-  }  
-  .checkout img {
-    transform: rotate(0deg);  
+    line-height: 42px !important;
   }
-  .tsp{
-    height: 19px;  
+  .checkout img {
+    transform: rotate(0deg);
+  }
+  .tsp {
+    height: 19px;
   }
   .tsr {
-    height: 16px
+    height: 16px;
   }
-   .truck h5 {
-       line-height: 28px;
-       margin-bottom: 2px;
-    }
-    .press{  
-      line-height: 24px;  
-    }
-    .thedon{
-      display: flex;
-      justify-content: space-between;
-    }  
-    .footerlinkone{
-      display: flex;
-      flex-direction: row;       
-    }
-    .careers{ 
-      margin-right: 124px;
-    }
-    .container{
-           padding:0 35px ;        
-    }
-    .cos{
-      display: flex;
-   
-    }
-    .links{
-    display: flex;                                      
-    flex-direction: column;  
-    align-content: flex-end;   
-    }             
-    .co{     
-             
-    }                
-    .co span{
-     white-space: nowrap;                    
-    }  
-}  
-      
+  .truck h5 {
+    line-height: 28px;
+    margin-bottom: 2px;
+  }
+  .press {
+    line-height: 24px;
+  }
+  .thedon {
+    margin-top: 63px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footerlinkone {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 26px;
+  }
+  .careers {
+    width: 50%;
+    margin-bottom: 15px;
+    margin-right: 23px;
+  }
+  .container {
+    padding: 0 55px;
+  }
+  footer {
+    padding: 49px 0px 14px 0px;
+  }
+  .cos {
+    display: flex;
+    transform: translateY(-21px);
+    justify-content: space-between;
+  }
+  .glob {
+    width: 50%;
+  }
+  .links {
+    transform: translate(3px, 6px);
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+  .co {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75%;
+    align-content: flex-end;
+  }
+
+  .co span {
+    white-space: nowrap;
+    margin-bottom: 5px !important;
+  }
+  .icon {
+    transform: translate(24px, -13px);
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .linkp {
+    white-space: nowrap;
+    text-align: right;
+    margin-right: 0px;
+    letter-spacing: 0.46px;
+  }
+  .linkp img {
+    margin-left: 2px;
+  }
+  .co1 {    
+    margin-right: 30px !important;
+  }
+  .co span {
+    margin-right: 30px;
+  }
+  .cookies {
+    transform: translateY(-6px);
+    margin-right: 5px;
+    text-align: right;  
+  }
+  #footerlinkone {
+    margin-bottom: 0px;
+  }
+}
