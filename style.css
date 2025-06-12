@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.we {
+  display: none;
+}
 #search {
   display: none;
 }
@@ -1622,16 +1624,158 @@ footer {
     display: flex;
   }
   .truck h5 {
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
     line-height: 2rem;
   }
   .container {
-        max-width: 1024px;
-        margin: 0 auto;
-        padding: 48px 45px 0px 45px;
-    }
-  footer{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 48px 45px 0px 45px;
+  }
+  footer {
     padding-top: 0px;
-  } 
+  }
 }
-   
+
+@media (min-width: 1260px) {
+  .bars {
+    display: none;
+  }
+  .header_logo {
+    width: 15%;
+    margin-left: 0;
+    text-align: left;
+  }
+  .header_logo svg {
+    margin-left: 30px;
+    margin-top: 26px;
+  }
+  .we {
+    display: flex;
+    padding-left: 40px;
+  }
+
+  .wes {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 30px 5px;
+    padding-top: 38px;
+    padding-right: 12px;
+    color: white;
+    font-family: bsize;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 17px;
+    border-bottom: 2px solid transparent;
+
+    text-decoration: none;
+  }
+  .wes svg {
+    transform: translate(-2px, -2px);
+  }
+  #investors {
+    padding-left: 14px;
+  }
+  .wes span {
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+  }
+  header {
+    padding: 0;
+  }
+  #search {
+    padding: 16px 24px 31px 0;
+  }
+  .search_icon {
+    padding: 1px 23px 14px 4px;
+  }
+  .search_icon svg {
+    margin-top: 0px;
+  }
+  .search_icon.seas {
+    padding-right: 25px;
+  }
+  .search_icon.seas {
+    padding-right: 25px;
+  }
+  .imgh1 {
+    top: 39%;
+  }
+  .imgh1 h2 {
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 72px;
+  }
+  .everyday h2 {
+    line-height: 42px;
+  }
+  .everyday h5 {
+    font-weight: 700;
+    font-family: blsize;
+    margin: 48px 0px 45px 0px;
+  }
+  .every {
+    background-color: white;
+    position: absolute;
+    top: 47.2%;
+    left: 50.3%;
+    transform: translate(-50%, -50%);
+    padding: 5px 110px !important;
+  }
+  .everyday {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    padding: 0px;
+    width: 410px;
+  }
+  .everyday p {
+    margin-bottom: 30px;
+  }
+  .stars svg {
+    width: 50px;
+    height: 46px;
+  }
+  .stars .sw {
+    width: 67.5px;
+    height: 67.5px;
+  }
+  .eat h2 {
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 72px;
+  }
+  .snack {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  .star p {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 32px;
+  }  
+  .star{
+    margin-bottom: 105px;
+  }
+  .chips{
+    margin-top: 100px;
+           
+    display: flex;
+
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .chipsimg{
+     transform: translateX(50px);
+    padding: 0px;
+    width: 22.5%;
+    height: 99%;
+  }
+}
