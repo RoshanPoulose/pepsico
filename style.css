@@ -3,6 +3,52 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.clicked {
+  display: none;
+  padding: 20px 0px;
+  position: fixed;
+  background: white;
+  top: 54px;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+}
+.clicked.show{
+  display: flex;
+}
+.contwo {
+  padding: 14px 15px;
+  padding-bottom: 15px;
+  margin: 15px;
+  border-top: 1px solid #ccc;
+}
+.contss {
+  font-family: nsize;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 14px;
+  padding: 13px 0 8px;
+}
+.conts {
+  display: flex;
+  padding: 20px 30px 8px;
+
+  color: #004c97;
+  font-family: bsize;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+.contss svg {
+  margin-right: 2px;
+}
+.contss {
+  display: flex;
+  align-items: center;
+}
 .we {
   display: none;
 }
@@ -127,6 +173,7 @@ header {
   right: 26px;
 }
 
+/* this is while no acitve */
 .bars span {
   display: block;
   position: absolute;
@@ -145,6 +192,7 @@ header {
   width: 30px;
   top: 10px;
 }
+
 .bars span::before {
   content: "";
   display: block;
@@ -154,6 +202,26 @@ header {
   width: 30px;
   top: 20px;
 }
+
+/* 
+this after active work 
+ */
+ .bars {
+
+  top: 28px;
+}
+.bars.active span {
+  transform: rotate(45deg);
+}
+.bars.active span::after {
+  transform: rotate(-90deg) translate3d(10px, 0, 0);
+}
+
+.bars.active span::before {
+  display: none;
+}
+/*  */
+
 .hs {
   height: 500px;
 }
@@ -1759,23 +1827,52 @@ footer {
     font-size: 18px;
     letter-spacing: 0;
     line-height: 32px;
-  }  
-  .star{
+  }
+  .star {
     margin-bottom: 105px;
   }
-  .chips{
+  .chips {
     margin-top: 100px;
-           
+
     display: flex;
 
     align-items: flex-end;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .chipsimg{
-     transform: translateX(50px);
+  .chipsimg {
+    transform: translateX(50px);
     padding: 0px;
     width: 22.5%;
     height: 99%;
+  }
+  .checkout h2 {
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    line-height: 70px !important;
+  }
+  .pep {
+    padding: 116px 0 50px 0;
+  }
+  .topsocial img {
+    height: 323px !important;
+    width: 323px !important;
+    margin-bottom: 15px;
+  }
+  .bottomsocial {
+    width: 343px;
+  }
+  .bottomsocial p {
+    width: 330px;
+  }
+  .checkout {
+    padding: 103px 41px 0 132px !important;
+  }
+  .founds {
+    bottom: 60px;
+  }
+  .container {
+    padding: 48px 16px 0px 16px;
   }
 }
