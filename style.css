@@ -14,9 +14,10 @@
   height: 100vh;
   z-index: 99;
 }
-.clicked.show{
+.clicked.show {
   display: flex;
 }
+
 .contwo {
   padding: 14px 15px;
   padding-bottom: 15px;
@@ -206,24 +207,22 @@ header {
 /* 
 this after active work 
  */
- .bars {
-
+.bars.active {
   top: 28px;
 }
-.bars.active span {
+.bars.active span {                         
   transform: rotate(45deg);
-}
-.bars.active span::after {
+}                      
+.bars.active span::after {          
   transform: rotate(-90deg) translate3d(10px, 0, 0);
-}
-
-.bars.active span::before {
-  display: none;
-}
+}                                     
+.bars.active span::before {      
+  display: none;  
+}                
 /*  */
 
 .hs {
-  height: 500px;
+  height: 500px;               
 }
 .subroller {
   background-color: white;
@@ -291,8 +290,29 @@ this after active work
   margin-right: 20px;
 }
 .scroll {
+  position: relative;
   display: flex;
   overflow-x: auto;
+}
+.scrolll {
+  position: absolute;
+  left: 12px;
+  top: 17.8%;
+}
+.scrolll img {
+  width: 60px;
+  height: 60px;
+  background-size: 100% !important;
+}
+.scrollr {
+  position: absolute;
+  right: 25px;
+  top: 17.8%;
+}
+.scrollr img { 
+  width: 60px;
+  height: 60px;
+  background-size: 100% !important;
 }
 .scroll::-webkit-scrollbar {
   display: none;
@@ -309,6 +329,9 @@ this after active work
 }
 .scrollleft {
   display: none;
+}
+.scrollleft img {
+  width: 100%;
 }
 .scrollright {
   display: none;
