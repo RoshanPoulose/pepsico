@@ -1823,6 +1823,9 @@ footer {
     padding: 0px;
     width: 410px;
   }
+  .spa{
+    height: 100px;
+  }
   .everyday p {
     margin-bottom: 30px;
   }
@@ -1898,8 +1901,32 @@ footer {
   .container {
     padding: 48px 16px 0px 16px;
   }          
-  .hello{
-    color: white;
-  }      
+     
 }     
-               
+        
+@media (min-width: 1440px) {
+  .every{
+    min-height: 50%;
+  }
+  .everyday{
+    width: 699px;
+    padding: 0px !important;  
+  }
+  .cloud img{
+    width: 16.6667%;
+  }
+  .eat h2{
+    margin-bottom: 133px;
+  }         
+    .social{
+      padding: 70px;
+      padding-left:182px;
+    }
+    .checkout img {
+        transform: rotate(0deg);
+        transform: translate(215px, 234px);
+    }
+    .container{
+      max-width: 1140px;
+    }
+}
