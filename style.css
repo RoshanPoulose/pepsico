@@ -1898,6 +1898,9 @@ footer {
   .founds {
     bottom: 60px;
   }
+  .careeh{
+    color: beige;
+  }
   .container {
     padding: 48px 16px 0px 16px;
   }          
@@ -1926,7 +1929,7 @@ footer {
         transform: rotate(0deg);
         transform: translate(215px, 234px);
     }
-    .container{
-      max-width: 1140px;
-    }
-}
+    .container{               
+      max-width: 1140px;                                        
+    }      
+}       
