@@ -1898,13 +1898,13 @@ footer {
   .founds {
     bottom: 60px;
   }
-  .careeh{
-    color: beige;
-  }
+
   .container {
     padding: 48px 16px 0px 16px;
   }          
-     
+     .hello{
+      color: black;
+     }
 }     
         
 @media (min-width: 1440px) {
