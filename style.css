@@ -1889,6 +1889,7 @@ footer {
   .bottomsocial {
     width: 343px;
   }
+  
   .bottomsocial p {
     width: 330px;
   }
@@ -1931,5 +1932,8 @@ footer {
     }
     .container{               
       max-width: 1140px;                                        
-    }      
+    }     
+    .lol{
+      color: blue;
+    }   
 }       
