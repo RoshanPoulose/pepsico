@@ -1933,11 +1933,7 @@ footer {
     .container{               
       max-width: 1140px;                                        
     } 
-    .nz{
-      display: flex;
-      align-items: center;  
-      justify-content: center; 
-      padding: auto;
-      
+    .la{
+      color: #000;
     }
 }                                                                                                                                                                                                                                                                                                                         
